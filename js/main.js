@@ -6,7 +6,6 @@ setInterval(oneSecondFunction, 500);
 function oneSecondFunction() {
     var yesLen = 10*(yesBar.clientWidth)/(yesBar.clientWidth + noBar.clientWidth);
     var yesLenInPoint = addZeroes(Math.round(yesLen*2)/2)
-    console.log(yesLenInPoint)
     yesVal.innerHTML = `₹${yesLenInPoint}`
     noVal.innerHTML = `₹${addZeroes(10-yesLenInPoint)}`
 }
